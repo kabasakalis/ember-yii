@@ -25,7 +25,7 @@ and therefore acquire  huge benefit in terms of scaling and maintaining your app
 ## Setting It Up.
 
 Clone the git repo - `git clone git://github.com/drumaddict/ember-yii.git` - or [download it](https://github.com/drumaddict/ember-yii/zipball/master)
-To install,follw these steps.
+To install,follow these steps.
 - Hook up your Yii framework path in index.php.(Tested with version 1.1.12.)
 - In config/main  and config/console.php fill in your database info.
 - Run the migration in migrations folder.(In console,navigate to protected folder and type yiic migrate and respond to dialog).Or just use the sql dump in data folder.
