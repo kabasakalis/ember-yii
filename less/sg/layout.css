@@ -1,0 +1,57 @@
+/*!
+ * Layout.less  v1.0.0 with Semantic Grid
+ *
+ * Copyright 2012 InfoWebSphere, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built by Spiros Kabasakalis
+ */
+/*!
+ * Layout ------------------------------
+ *
+ */
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+div#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header#mainheader {
+  background-image: url('http://placehold.it/960x120.png/555555/777777&text=Yii+Framework');
+  height: 120px;
+}
+div#main {
+  display: inline;
+  float: left;
+  width: 700px;
+  margin: 0 10px;
+}
+aside#sidebar {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+}
+footer {
+  clear: both;
+  padding-top: 10px;
+}
+#sidebar-img {
+  float: right;
+}
+/*!
+ * -------------------------------------
+ *
+ */

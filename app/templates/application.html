@@ -1,0 +1,22 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <div id="brand"class="brand"> Contacts-Ember With REST Persistence and Yii Backend.
+          <a href="http://www.yiiframework.com/" target="_blank"><img class='offset1'   src="/app/css/img/yii-40.png" alt='ember_logo'></a>
+                      <a href="http://emberjs.com/" target="_blank">    <img     class='offset1' src="/app/css/img/ember_logo.png"></a>
+      </div>
+      <div class="btn-group pull-right">
+          {{#if controller.loggedin }}
+        <a class="btn  btn-primary" {{action showNewContact}}  ><i class="icon-plus-sign"></i> Add Contact</a>
+          <a class="btn  btn-primary" {{action logout}}  ><i class="icon-arrow-down"></i> Logout</a>
+          {{/if}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" id="main">
+  <div class="row-fluid">
+      {{outlet loginform}}
+       {{outlet}}
+  </div>
+</div>

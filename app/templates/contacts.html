@@ -1,0 +1,18 @@
+<div class="span3">
+  <div class="well alert">
+    <ul class="nav nav-list">
+      <li class="nav-header alert alert-info ">All contacts</li>
+        {{#each contact in arrangedContent}}
+             {{view App.Contact_In_List_View  contentBinding="contact"}}
+           {{/each}}
+    </ul>
+  </div>
+</div>
+<div  class="span5 ">
+  {{outlet}}
+</div>
+
+
+
+
+

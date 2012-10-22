@@ -1,0 +1,21 @@
+<legend> Sign In</legend>
+
+{{#with content}}
+  <div class="control-group">
+    <label class="control-label" for="password">Username</label>
+    <div class="controls">
+      {{view Ember.TextField valueBinding="username" id="username" placeholder="Username" required="true"}}
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="password">Password</label>
+    <div class="controls">
+      {{view Ember.TextField valueBinding="password" id="pwd" placeholder="Password" required="true"}}
+    </div>
+  </div>
+        <div id="err">  </div>
+{{/with}}
+<div  class="form-actions">
+    {{submitButton "Sign In"}}
+</div>
+{{outlet}}

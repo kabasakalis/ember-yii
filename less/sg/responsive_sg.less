@@ -1,0 +1,259 @@
+/*!
+ * Responsive.less  v1.0.0 with Semantic Grid
+ *Visibility Utilities From Bootstrap Twitter.
+ * Copyright 2012 InfoWebSphere, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built by Spiros Kabasakalis
+
+ @column-width:42;
+ @gutter-width: 20;
+ @columns: 12;
+
+ @total-width=@columns*(@column-width+@gutter-width);
+ 
+ */
+
+
+/*UP TO LANDSCAPE PHONE   */
+// -------------------------------------------------------------------
+
+
+
+
+@media  (max-width: 319px) {
+@import 'grid.less';
+
+
+
+@total-width: 100%;
+//Wraps the page
+ div#wrapper {
+.centerfluid();
+}
+
+header#mainheader{
+.clearfloatcolumn();
+   background: url('http://placehold.it/300x80.png/555555/777777&text=Yii+Framework')  center center no-repeat   ;
+  height:80px;
+}
+
+//clear the floats,stack.
+footer,div#main{
+.clearfloatcolumn();
+}
+
+div.form{
+         float: left;
+     }
+  aside#sidebar {
+        width:auto;
+    }
+
+.form input,.form textarea {
+width:200px;
+}
+
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+@import 'grid.less';
+
+@total-width: 100%;
+//Wraps the page
+ div#wrapper {
+.centerfluid();
+}
+
+header#mainheader{
+.clearfloatcolumn();
+   background: url('http://placehold.it/300x80.png/555555/777777&text=Yii+Framework')  center center no-repeat   ;
+  height:80px;
+}
+
+//clear the floats,stack.
+footer,div#main{
+.clearfloatcolumn();
+}
+
+div.form{
+         float: left;
+     }
+  aside#sidebar {
+        width:auto;
+    }
+
+.form input,.form textarea{
+width:220px;
+}
+
+
+
+
+}
+
+/* LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET */
+// --------------------------------------------------
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+@import 'grid.less';
+@total-width: 100%;
+//Wraps the page
+ div#wrapper {
+.centerfluid();
+}
+
+header#mainheader{
+.clearfloatcolumn();
+   background: url('http://placehold.it/430x80.png/555555/777777&text=Yii+Framework') center center  no-repeat   ;
+   height:80px;
+}
+
+//clear the floats,stack.
+footer,div#main{
+.clearfloatcolumn();
+}
+
+div.form{
+         float: left;
+     }
+  aside#sidebar {
+        width:auto;
+    }
+
+.form input,.form textarea{
+width:220px;
+}
+
+  }
+
+
+
+/* PORTRAIT TABLET TO DEFAULT DESKTOP*/
+// ----------------------------------
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+      @import 'grid.less';
+
+// Fixed grid Column with thinner columns:42px
+@column-width:42;
+@gutter-width: 20;
+@columns: 12;
+
+//Wraps the page
+ div#wrapper {
+.center();
+}
+
+header#mainheader{
+.clearfloatcolumn();
+ background-image: url('http://placehold.it/760x120.png/555555/777777&text=Yii+Framework');
+ height:120px;
+}
+
+// main and sidebar
+div#main {
+	.column(9);
+}
+aside#sidebar {
+	.column(3);
+}
+
+
+}
+
+
+
+/*TABLETS AND BELOW*/
+// -----------------
+@media (max-width: 979px) {
+
+
+
+ 
+}
+
+
+/* DEFAULT DESKTOP The code is in layout.less  */
+// ---------------
+
+@media (min-width: 980px) {
+
+
+}
+
+
+/*LARGE DESKTOP & UP*/
+// ------------------
+
+
+@media (min-width: 1200px) {
+
+     @import 'grid.less';
+  // Fixed grid Column width 70 ,gutter width 30.Total wrapper width (@total-width) is 1200px
+@column-width:70;
+@gutter-width: 30;
+@columns: 12;
+
+//@total-width: 100%;
+
+//Wraps the page
+ div#wrapper {
+.center();
+}
+
+header#mainheader{
+.clearfloatcolumn();
+ background-image: url('http://placehold.it/1200x120.png/555555/777777&text=Yii+Framework');
+ height:120px;
+}
+
+// main and sidebar
+div#main {
+	.column(9);
+}
+aside#sidebar {
+	.column(3);
+}
+
+}
+
+/* Visibility utilities (from Bootstrap Twitter) */
+
+// For desktops
+.visible-phone     { display: none; }
+.visible-tablet    { display: none; }
+.visible-desktop   { display: block; }
+.hidden-phone      { display: block; }
+.hidden-tablet     { display: block; }
+.hidden-desktop    { display: none; }
+
+// Phones only
+@media (max-width: 767px) {
+  // Show
+  .visible-phone     { display: block; }
+  // Hide
+  .hidden-phone      { display: none; }
+  // Hide everything else
+  .hidden-desktop    { display: block; }
+  .visible-desktop   { display: none; }
+}
+
+// Tablets & small desktops only
+@media (min-width: 768px) and (max-width: 979px) {
+  // Show
+  .visible-tablet    { display: block; }
+  // Hide
+  .hidden-tablet     { display: none; }
+  // Hide everything else
+  .hidden-desktop    { display: block; }
+  .visible-desktop   { display: none; }
+}
+
+
+

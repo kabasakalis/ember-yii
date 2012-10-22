@@ -1,0 +1,43 @@
+/*!
+ * sem_layout.less  Bootstrap Twitter
+ *
+ * Copyright 2012 InfoWebSphere, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built by Spiros Kabasakalis
+
+ @column-width:42;
+ @gutter-width: 20;
+ @columns: 12;
+
+Used with grid_bs_sem.php layout.
+ Please note you have to right extra code with media queries to make this semantic layout responsive.
+ The responsive.less works only with non semantic classes .span* .row and so on.
+ */
+
+// Core variables and mixins
+@import "bs/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "bs/mixins.less";
+
+
+div#wrapper{
+.container-fixed();
+width:@gridRowWidth;
+}
+
+div#content{
+.makeRow();
+}
+
+div.flash-messages,div.breadcrumbs,footer{
+.makeColumn(12);
+}
+
+div#main{
+.makeColumn(9);
+}
+
+aside#sidebar{
+.makeColumn(3);
+}

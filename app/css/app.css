@@ -1,0 +1,30 @@
+#main {
+  margin-top: 50px;
+}
+
+#brand {
+    padding-bottom: 3px;
+}
+#login {
+    font-size: 40px;
+        height: 60px;
+        width: 220px
+}
+
+
+.contact-details {
+  h2 img {
+    margin-right: 15px;
+    width: 80px;
+    height: 80px;
+  }
+
+  dl.dl-horizontal {
+    dt {
+      width: 80px;
+    }
+    dd {
+      margin-left: 95px;
+    }
+  }
+}

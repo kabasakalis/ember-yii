@@ -1,0 +1,17 @@
+{{#with content}}
+        <h2 class="page-header"><img {{bindAttr src="gravatar"}} />   {{full_name}}</h2>
+        <dl class="dl-horizontal">
+          {{#if email}}
+            <dt>Email:</dt>
+            <dd>{{mailto email}}</dd>
+          {{/if}}
+          {{#if notes}}
+            <dt>Notes:</dt>
+            <dd>{{notes}}</dd>
+          {{/if}}
+        </dl>
+      {{/with}}
+      <div>
+        <a class="btn" {{action showEdit}}>Edit</a>
+        <a class="btn btn-danger" {{action destroyRecord target="controller"}}>Remove</a>
+      </div>

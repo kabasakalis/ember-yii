@@ -1,0 +1,65 @@
+/*!
+ * Layout.less  v1.0.0 with Semantic Grid
+ *
+ * Copyright 2012 InfoWebSphere, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built by Spiros Kabasakalis
+ */
+@import 'grid.less';
+
+// Specify the number of columns and set column and gutter widths
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+
+// Uncomment the definition below for a percentage-based layout
+// @total-width: 100%;
+
+
+/*!
+ * Layout ------------------------------
+ *
+ */
+
+
+body {
+	width: 100%;
+	.clearfix;
+}
+
+//Wraps the page
+ div#wrapper {
+.center();
+}
+
+// header
+ header#mainheader {
+  //  .center
+ 
+      background-image: url('http://placehold.it/960x120.png/555555/777777&text=Yii+Framework');
+   height:120px;
+}
+
+// main and sidebar
+div#main {
+	.column(9);
+}
+aside#sidebar {
+	.column(3);
+
+}
+
+footer {
+clear:both;
+padding-top:10px;
+}
+
+#sidebar-img {
+float:right;
+}
+/*!
+ * -------------------------------------
+ *
+ */

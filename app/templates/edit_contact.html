@@ -1,0 +1,36 @@
+<legend>{{#if content.id}}Edit{{else}}Create{{/if}} Contact</legend>
+
+{{#with content}}
+  <div class="control-group">
+    <label class="control-label" for="first_name">First name</label>
+    <div class="controls">
+      {{view Ember.TextField valueBinding="first_name" id="first_name" placeholder="First name" required="true"}}
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="last_name">Last name</label>
+    <div class="controls">
+      {{view Ember.TextField valueBinding="last_name" id="last_name" placeholder="Last name" required="true"}}
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="email">Email</label>
+    <div class="controls">
+      {{view Ember.TextField valueBinding="email" id="email" type="email" placeholder="Email address"}}
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="notes">Notes</label>
+    <div class="controls">
+      {{view Ember.TextArea valueBinding="notes" id="notes" placeholder="Notes"}}
+    </div>
+  </div>
+{{/with}}
+<div class="pull-right">
+  {{#if content.id}}
+    {{plainButton "Update"}}
+  {{else}}
+    {{plainButton "Create"}}
+  {{/if}}
+  <a class="btn" {{action cancelEdit}}>Cancel</a>
+</div>
