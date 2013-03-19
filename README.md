@@ -4,6 +4,10 @@
  Licensed under the Apache License v2.0  
  http://www.apache.org/licenses/LICENSE-2.0  
  Author   [Spiros Kabasakalis](http://www.reverbnation.com/spiroskabasakalis).See credits below.
+ 
+## Notice
+This demo app uses  old ember.js(1.0 pre) and ember-data(CURRENT_API_REVISION: 5) versions.I currently have no plans to update it with latest versions.
+Also,this demo uses  AMD with require js but I have not optimized (minified-combined) the scripts.Instructions on  how to do so can be found at [require.js](http://requirejs.org/).
 
 ## Demo.
  [See Live Demo]( http://ember-yii.sk.hj.cx/site/app)
